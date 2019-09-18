@@ -7,7 +7,7 @@ import { Form, Icon, Input, Button, message } from 'antd'
 
 //导入自己的组件
 import './login.css'
-import logo from './images/logo.png'
+import logo from '../../assets/images/logo.png'
 import {reqLogin} from '../../api'
 
 const Item = Form.Item  //不能写在import之前
@@ -37,9 +37,9 @@ class Login extends Component {
                 //     console.log('请求出错',error)
                 // }
 
-                const result = await reqLogin(username,password)
+                // const result = await reqLogin(username,password)
 
-                console.log(result);
+                // console.log(result);
 
             } else {
                 console.log('校验失败')
